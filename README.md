@@ -76,10 +76,6 @@ Java classes that provide input data via `@DataProvider`:
 
 ---
 
-  }
-
-  ---
-
 ## Multiple TestNG Suites
 
 The framework supports multiple `testng.xml` files, each targeting different categories of tests.
