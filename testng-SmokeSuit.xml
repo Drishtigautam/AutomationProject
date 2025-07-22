@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Test Suite">
+    <groups>
+        <run>
+            <include name="smoke "/>
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="io.auto.listener.TestListener"/>
+    </listeners>
+    <test name="Smoke Suit - All Tests"/>
+    <test verbose="2" preserve-order="true" name="TAF Login Test">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="io.auto.tests.LoginTest"/>
+            <class name="io.auto.tests.LogoutTest"/>
+        </classes>
+    </test>
+</suite>

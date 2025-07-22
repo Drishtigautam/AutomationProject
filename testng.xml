@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="4">
+    <listeners>
+        <listener class-name="io.auto.listener.TestListener"/>
+    </listeners>
+    <test name="Regression Suit - Parallel Tests"/>
+    <test verbose="2" preserve-order="true" name="TAF Login Test">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="io.auto.tests.LoginTest"/>
+            <class name="io.auto.tests.LogoutTest"/>
+            <class name="io.auto.tests.ProductTest"/>
+            <class name="io.auto.tests.CartTest"/>
+        </classes>
+    </test>
+</suite>
