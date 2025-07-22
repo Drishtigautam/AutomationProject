@@ -7,7 +7,7 @@ This project showcases a **Hybrid Test Automation Framework** developed using **
 
 ---
 
-## 🔹 Key Highlights
+## Key Highlights
 
 - **Hybrid Framework**: Merges modular, keyword-based, and data-driven methodologies.
 - **Page Object Model (POM)**: Each page in the application is represented by a separate class containing element locators and interaction methods.
@@ -19,7 +19,7 @@ This project showcases a **Hybrid Test Automation Framework** developed using **
 
 ---
 
-## 🗂️ Folder Overview
+## Folder Overview
 
 ### `1. utilities/`
 
@@ -80,7 +80,7 @@ Java classes that provide input data via `@DataProvider`:
 
   ---
 
-## 🧾 Multiple TestNG Suites
+## Multiple TestNG Suites
 
 The framework supports multiple `testng.xml` files, each targeting different categories of tests.
 
@@ -93,9 +93,9 @@ The framework supports multiple `testng.xml` files, each targeting different cat
 
 ### Running a Suite:
 
-You can run a specific suite from terminal:
-```bash
-mvn clean test -DsuiteXmlFile=testng.xml
+- mvn clean test "-DsuiteXMLFile=testng.xml" → works in PowerShell
+
+- mvn clean test -DsuiteXMLFile=testng.xml → works in CMD
 
 
   
